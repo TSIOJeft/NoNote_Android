@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@drawable/linear_background_color">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_toStartOf="@+id/save_bu"
+        android:background="@drawable/linear_background_color">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tag_insert_bu"
+                style="@style/IconButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:tag="#"
+                app:icon="@drawable/round_tag_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/format_insert_bu"
+                style="@style/IconButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:tag="$"
+                app:icon="@drawable/round_attach_money_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/space_insert_bu"
+                style="@style/IconButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:tag=" "
+                app:icon="@drawable/round_space_bar_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tab_insert_bu"
+                style="@style/IconButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:tag="\t"
+                app:icon="@drawable/round_keyboard_tab_24" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </HorizontalScrollView>
+    <com.google.android.material.button.MaterialButton
+        style="@style/IconButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:icon="@drawable/outline_save_24"
+        android:id="@+id/save_bu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
