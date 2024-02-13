@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* body {
+    overflow: scroll;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 100%;
+    margin:0;
+} */
+
+/* #vditor {
+    display: table-cell;
+    outline: 0px solid transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+.toolbar {
+    height: 42px;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#757575, #616161);
+}
+
+.borderButton {
+    border: 1px solid #424242;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.vditor {
+    border-radius: 0;
+    border: 0 solid #000;
+    flex: 1;
+    align-self: center;
+}
+
+.vditor-toolbar {
+    border-bottom: 0 solid #000;
+    height: 0;
+}
+
+.vditor-textarea {
+    background-color: #fff;
+}
